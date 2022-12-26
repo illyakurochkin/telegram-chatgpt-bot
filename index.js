@@ -67,7 +67,7 @@ const run = async () => {
   try {
     await main();
   } catch (error) {
-    console.log(error);
+    console.log('error', error);
     await run();
   }
 }
