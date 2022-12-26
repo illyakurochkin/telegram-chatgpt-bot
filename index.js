@@ -73,7 +73,7 @@ const run = async () => {
 
   while(true) {
     console.log('running...');
-    await new Promise(res => setTimeout(2000, res));
+    await new Promise(res => setTimeout(res, 2000));
   }
 }
 
