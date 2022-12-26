@@ -70,6 +70,11 @@ const run = async () => {
     console.log('error', error);
     await run();
   }
+
+  while(true) {
+    console.log('running...');
+    await new Promise(res => setTimeout(2000, res));
+  }
 }
 
 run();
